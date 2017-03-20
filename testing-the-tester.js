@@ -4,14 +4,28 @@
 
 
 function restart() {
-
+  var box = ['x', 'x', 'x',
+             'x', 'x', 'x',
+             'x', 'x', 'x']
+  var player = 1
 }
 
+//out: boorlean (t/f) whether the game is over or not
 function isGameOver() {
   return false
 }
 
+//input: nothing
+//output: either 1,2,3 , or if it the start of the game
 function whoWon() {
+if (grid[0] && grid[0] === grid[1] && grid[0] === grid[2]) return grid[0]
+if (grid[0] && grid[0] === grid[1] && grid[0] === grid[2]) return grid[0]
+if (grid[0] && grid[0] === grid[1] && grid[0] === grid[2]) return grid[0]
+if (grid[0] && grid[0] === grid[1] && grid[0] === grid[2]) return grid[0]
+if (grid[0] && grid[0] === grid[1] && grid[0] === grid[2]) return grid[0]
+if (grid[0] && grid[0] === grid[1] && grid[0] === grid[2]) return grid[0]
+if (grid[0] && grid[0] === grid[1] && grid[0] === grid[2]) return grid[0]
+if (grid[0] && grid[0] === grid[1] && grid[0] === grid[2]) return grid[0]
   return 0
 }
 
