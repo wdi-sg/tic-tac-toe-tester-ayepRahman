@@ -1,8 +1,6 @@
-var box = ['x', 'x', 'x',
-           'x', 'x', 'x',
-           'x', 'x', 'x']
 
-var playerInput = []
+
+
 
 
 function restart() {
@@ -17,12 +15,21 @@ function whoWon() {
   return 0
 }
 
+
+var box = ['x', 'x', 'x',
+           'x', 'x', 'x',
+           'x', 'x', 'x']
+var turn = ''
+
+
 function playTurn(index) {
-  var newMove = []
 
-  if(index === box[index]) {
+  if (box[index]) {
     return false
-  }
-
-  //return true
+   } else {
+     box[index] = turn
+     if (turn === '' )
+     turn = ''
+     return true
+   }
 }
